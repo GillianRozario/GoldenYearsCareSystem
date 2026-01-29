@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+  if (!localStorage.getItem("role")) {
+    localStorage.setItem("role", "Owner");
+  }
+</script>
+
+</head>
+
+<body>
+<h2>Admission Dashboard</h2>
+<button onclick="goAdmission()">New Admission</button>
+<button onclick="goSearch()">Search Records</button>
+<button id="ownerBtn" onclick="goOwner()">Owner Panel</button>
+
+<script>
+    const role = localStorage.getItem("Role");
+    if (role !== "Owner") { document.getElementById("ownerBtn").style.display = "none"; }
+
+    function goAdmission() {location.href = "admission.html"; }
+    function goSearch() { location.href = "admission.html"; }
+    function goOwner() { location.href = "owner.html"; }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Admissions</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    if (!localStorage.getItem("role")) {
+      location.href = "index.html";
+    }
+  </script>
+</head>
+
+<body>
+
+<div class="header">Golden Years Care System</div>
+
+<div class="container">
+  <h2>Search Admissions</h2>
+
+  <div class="search-bar">
+    <input id="searchName" placeholder="Search by Name">
+    <input id="searchId" placeholder="Admission Number">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div id="results"></div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Admission</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    const role = localStorage.getItem("role");
+    if (role !== "Staff" && role !== "Trustee") {
+      alert("Access denied");
+      location.href = "dashboard.html";
+    }
+  </script>
+</head>
+
+<body>
+
+<div class="header">Golden Years Care System</div>
+
+<div class="container">
+  <h2>New Admission</h2>
+
+  <form id="admissionForm">
+    <input id="full_name" placeholder="Full Name">
+    <input id="age" placeholder="Age">
+    <input id="sex" placeholder="Sex">
+    <input id="father" placeholder="Father / Spouse">
+
+    <input id="identification" placeholder="Identification Marks" class="full">
+    <input id="address" placeholder="Address" class="full">
+    <input id="education" placeholder="Education">
+    <input id="employment" placeholder="Last Employed As">
+
+    <input id="conscious" placeholder="State of Consciousness">
+    <input id="mental" placeholder="Mental Condition">
+    <input id="physical" placeholder="Physical Condition">
+    <input id="bp" placeholder="Blood Pressure">
+    <input id="pulse" placeholder="Pulse (BPM)">
+    <input id="sugar" placeholder="Sugar Levels">
+    <input id="vision" placeholder="Vision">
+    <input id="speech" placeholder="Speech">
+
+    <input id="medical" placeholder="Medical History" class="full">
+    <input id="surgical" placeholder="Surgical History" class="full">
+
+    <input id="injuries" placeholder="Injuries (if any)">
+    <input id="fracture" placeholder="Fractures (if any)">
+    <input id="handicap" placeholder="Handicap (yes/no)">
+
+    <input id="witness" placeholder="Witness Name">
+    <input id="witness_phone" placeholder="Witness Contact Number">
+
+    <button type="submit" class="full">Submit Admission</button>
+  </form>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

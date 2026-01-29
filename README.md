@@ -41,16 +41,16 @@ Technologies Used
 
 Project Structure
 admission-module/
-├── index.html
-├── dashboard.html
-├── admission.html
-├── search.html
-├── owner.html
-├── styles.css
-├── app.js
-├── admission.js
-├── search.js
-├── owner.js
-├── supabase.js
-│
-└── README.md
+
+  -index.html
+  -dashboard.html
+  -admission.html
+  -search.html
+  -owner.html
+  -styles.css
+  -app.js
+  -admission.js
+  -search.js
+  -owner.js
+  -supabase.js
+  -README.md

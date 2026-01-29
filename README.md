@@ -39,6 +39,18 @@ Technologies Used
 - Database: PostgreSQL
 - Browser Support: Chrome, Firefox, Edge
 
----
-
-## 📂 Project Structure
+Project Structure
+admission-module/
+├── index.html
+├── dashboard.html
+├── admission.html
+├── search.html
+├── owner.html
+├── styles.css
+├── app.js
+├── admission.js
+├── search.js
+├── owner.js
+├── supabase.js
+│
+└── README.md
